@@ -4,6 +4,12 @@
         <title>Pokedex</title>
     </head>
     <body>
+        <form>
+            <label for="search_name">Pokemon Name:</label>
+            <input type="text" id="search_name" name="search_name">
+          </form>
+        <button onclick="QueryPokeAPI()">Search</button>
+        <h1 id="pokemon_name">name</h1>
         <p id="phdata">Put data here</p>
     </body>
     <script type="text/javascript" src="src/script.js">
