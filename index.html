@@ -2,14 +2,17 @@
 <html>
     <head>
         <title>Pokedex</title>
+        <link rel="stylesheet" href="css/style.css" />
     </head>
     <body>
-        <form>
-            <label for="search_name">Pokemon Name:</label>
-            <input type="text" id="search_name" name="search_name">
-          </form>
+        <input type="text" id="search_name" name="search_name"><br>
         <button onclick="QueryPokeAPI()">Search</button>
         <h1 id="pokemon_name">name</h1>
+        <img id="pokemon_sprite" visible="false" />
+        <h1>Abilities</h1> 
+        <h2 id="pokemon_abilities">abilities list</h2>
+        <h1>Moves</h1> 
+        <h2 id="pokemon_moves">moves list</h2>
         <p id="phdata">Put data here</p>
     </body>
     <script type="text/javascript" src="src/script.js">
